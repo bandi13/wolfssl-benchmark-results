@@ -1,0 +1,136 @@
+./configure --enable-all --disable-shared --disable-crl-monitor --enable-cuda CC=nvcc LD_FLAGS="-lcudart -lcublas" && make && \
+    ./wolfcrypt/benchmark/benchmark -csv
+
+------------------------------------------------------------------------------
+ wolfSSL version 5.7.0
+------------------------------------------------------------------------------
+Math: 	Multi-Precision: Wolf(SP) word-size=64 bits=4096 sp_int.c
+wolfCrypt Benchmark (block bytes 1048576, min 1.0 sec each)
+RNG                        160 MiB took 1.030 seconds,  155.336 MiB/s Cycles per byte =  16.50
+AES-128-CBC-enc              5 MiB took 41.219 seconds,    0.121 MiB/s Cycles per byte = 21132.58
+AES-128-CBC-dec            460 MiB took 1.006 seconds,  457.054 MiB/s Cycles per byte =   5.61
+AES-192-CBC-enc              5 MiB took 43.069 seconds,    0.116 MiB/s Cycles per byte = 22081.39
+AES-192-CBC-dec            380 MiB took 1.003 seconds,  378.824 MiB/s Cycles per byte =   6.77
+AES-256-CBC-enc              5 MiB took 45.890 seconds,    0.109 MiB/s Cycles per byte = 23527.38
+AES-256-CBC-dec            330 MiB took 1.013 seconds,  325.885 MiB/s Cycles per byte =   7.87
+AES-128-GCM-enc            265 MiB took 1.012 seconds,  261.847 MiB/s Cycles per byte =   9.79
+AES-128-GCM-dec            255 MiB took 1.008 seconds,  253.085 MiB/s Cycles per byte =  10.13
+AES-192-GCM-enc            250 MiB took 1.020 seconds,  245.127 MiB/s Cycles per byte =  10.46
+AES-192-GCM-dec            250 MiB took 1.019 seconds,  245.281 MiB/s Cycles per byte =  10.45
+AES-256-GCM-enc            240 MiB took 1.016 seconds,  236.317 MiB/s Cycles per byte =  10.85
+AES-256-GCM-dec            240 MiB took 1.013 seconds,  236.987 MiB/s Cycles per byte =  10.82
+AES-128-GCM-STREAM-enc     255 MiB took 1.011 seconds,  252.176 MiB/s Cycles per byte =  10.17
+AES-128-GCM-STREAM-dec     245 MiB took 1.004 seconds,  244.075 MiB/s Cycles per byte =  10.50
+AES-192-GCM-STREAM-enc     245 MiB took 1.006 seconds,  243.461 MiB/s Cycles per byte =  10.53
+AES-192-GCM-STREAM-dec     250 MiB took 1.020 seconds,  245.109 MiB/s Cycles per byte =  10.46
+AES-256-GCM-STREAM-enc     240 MiB took 1.016 seconds,  236.194 MiB/s Cycles per byte =  10.85
+AES-256-GCM-STREAM-dec     240 MiB took 1.014 seconds,  236.726 MiB/s Cycles per byte =  10.83
+GMAC Table 4-bit           398 MiB took 1.002 seconds,  397.075 MiB/s Cycles per byte =   6.46
+AES-128-ECB-enc           1056 MiB took 1.003 seconds, 1052.748 MiB/s Cycles per byte =   2.44
+AES-128-ECB-dec            462 MiB took 1.010 seconds,  457.260 MiB/s Cycles per byte =   5.61
+AES-192-ECB-enc            979 MiB took 1.004 seconds,  974.692 MiB/s Cycles per byte =   2.63
+AES-192-ECB-dec            352 MiB took 1.015 seconds,  346.913 MiB/s Cycles per byte =   7.39
+AES-256-ECB-enc            891 MiB took 1.006 seconds,  885.975 MiB/s Cycles per byte =   2.89
+AES-256-ECB-dec            330 MiB took 1.021 seconds,  323.092 MiB/s Cycles per byte =   7.93
+AES-XTS-enc                400 MiB took 1.009 seconds,  396.296 MiB/s Cycles per byte =   6.47
+AES-XTS-dec                260 MiB took 1.017 seconds,  255.532 MiB/s Cycles per byte =  10.03
+AES-128-CFB                  5 MiB took 40.877 seconds,    0.122 MiB/s Cycles per byte = 20957.42
+AES-192-CFB                  5 MiB took 43.467 seconds,    0.115 MiB/s Cycles per byte = 22285.16
+AES-256-CFB                  5 MiB took 46.232 seconds,    0.108 MiB/s Cycles per byte = 23702.98
+AES-128-OFB                  5 MiB took 40.707 seconds,    0.123 MiB/s Cycles per byte = 20870.01
+AES-192-OFB                  5 MiB took 43.433 seconds,    0.115 MiB/s Cycles per byte = 22267.68
+AES-256-OFB                  5 MiB took 46.262 seconds,    0.108 MiB/s Cycles per byte = 23718.15
+AES-128-CTR                775 MiB took 1.001 seconds,  773.887 MiB/s Cycles per byte =   3.31
+AES-192-CTR                720 MiB took 1.002 seconds,  718.636 MiB/s Cycles per byte =   3.57
+AES-256-CTR                670 MiB took 1.001 seconds,  669.291 MiB/s Cycles per byte =   3.83
+AES-CCM-enc                  5 MiB took 81.605 seconds,    0.061 MiB/s Cycles per byte = 41838.38
+AES-CCM-dec                  5 MiB took 81.884 seconds,    0.061 MiB/s Cycles per byte = 41981.29
+AES-256-SIV-enc              5 MiB took 41.148 seconds,    0.122 MiB/s Cycles per byte = 21096.46
+AES-256-SIV-dec              5 MiB took 41.105 seconds,    0.122 MiB/s Cycles per byte = 21074.17
+AES-384-SIV-enc              5 MiB took 43.813 seconds,    0.114 MiB/s Cycles per byte = 22462.49
+AES-384-SIV-dec              5 MiB took 43.830 seconds,    0.114 MiB/s Cycles per byte = 22471.16
+AES-512-SIV-enc              5 MiB took 46.476 seconds,    0.108 MiB/s Cycles per byte = 23828.13
+AES-512-SIV-dec              5 MiB took 46.393 seconds,    0.108 MiB/s Cycles per byte = 23785.38
+Camellia                   225 MiB took 1.004 seconds,  224.041 MiB/s Cycles per byte =  11.44
+ARC4                       430 MiB took 1.007 seconds,  427.029 MiB/s Cycles per byte =   6.00
+CHACHA                     645 MiB took 1.001 seconds,  644.580 MiB/s Cycles per byte =   3.98
+CHA-POLY                   510 MiB took 1.000 seconds,  509.780 MiB/s Cycles per byte =   5.03
+3DES                        40 MiB took 1.027 seconds,   38.937 MiB/s Cycles per byte =  65.84
+MD5                        860 MiB took 1.006 seconds,  855.219 MiB/s Cycles per byte =   3.00
+POLY1305                  2350 MiB took 1.000 seconds, 2349.738 MiB/s Cycles per byte =   1.09
+SHA                        820 MiB took 1.002 seconds,  818.500 MiB/s Cycles per byte =   3.13
+SHA-224                    310 MiB took 1.014 seconds,  305.820 MiB/s Cycles per byte =   8.38
+SHA-256                    310 MiB took 1.016 seconds,  305.217 MiB/s Cycles per byte =   8.40
+SHA-384                    585 MiB took 1.008 seconds,  580.591 MiB/s Cycles per byte =   4.42
+SHA-512                    600 MiB took 1.007 seconds,  595.721 MiB/s Cycles per byte =   4.30
+SHA-512/224                595 MiB took 1.004 seconds,  592.850 MiB/s Cycles per byte =   4.32
+SHA-512/256                595 MiB took 1.002 seconds,  593.913 MiB/s Cycles per byte =   4.32
+SHA3-224                   405 MiB took 1.002 seconds,  404.044 MiB/s Cycles per byte =   6.34
+SHA3-256                   385 MiB took 1.008 seconds,  381.852 MiB/s Cycles per byte =   6.71
+SHA3-384                   305 MiB took 1.011 seconds,  301.766 MiB/s Cycles per byte =   8.49
+SHA3-512                   210 MiB took 1.008 seconds,  208.433 MiB/s Cycles per byte =  12.30
+SHAKE128                   495 MiB took 1.000 seconds,  494.784 MiB/s Cycles per byte =   5.18
+SHAKE256                   395 MiB took 1.003 seconds,  393.659 MiB/s Cycles per byte =   6.51
+RIPEMD                     370 MiB took 1.013 seconds,  365.261 MiB/s Cycles per byte =   7.02
+BLAKE2b                    690 MiB took 1.005 seconds,  686.301 MiB/s Cycles per byte =   3.74
+BLAKE2s                    435 MiB took 1.002 seconds,  433.942 MiB/s Cycles per byte =   5.91
+AES-128-CMAC                 5 MiB took 40.897 seconds,    0.122 MiB/s Cycles per byte = 20967.55
+AES-256-CMAC                 5 MiB took 46.185 seconds,    0.108 MiB/s Cycles per byte = 23678.82
+HMAC-MD5                   830 MiB took 1.002 seconds,  828.708 MiB/s Cycles per byte =   3.09
+HMAC-SHA                   815 MiB took 1.002 seconds,  812.988 MiB/s Cycles per byte =   3.15
+HMAC-SHA224                310 MiB took 1.014 seconds,  305.708 MiB/s Cycles per byte =   8.39
+HMAC-SHA256                310 MiB took 1.009 seconds,  307.310 MiB/s Cycles per byte =   8.34
+HMAC-SHA384                590 MiB took 1.004 seconds,  587.868 MiB/s Cycles per byte =   4.36
+HMAC-SHA512                595 MiB took 1.002 seconds,  593.597 MiB/s Cycles per byte =   4.32
+PBKDF2                      34 KiB took 1.000 seconds,   34.153 KiB/s Cycles per byte = 76860.58
+SipHash-8                 3080 MiB took 1.000 seconds, 3079.079 MiB/s Cycles per byte =   0.83
+SipHash-16                3095 MiB took 1.001 seconds, 3091.742 MiB/s Cycles per byte =   0.83
+KDF      128     SRTP      1955 ops took 1.001 sec, avg 0.512 ms, 1952.822 ops/sec
+KDF      256     SRTP      1425 ops took 1.003 sec, avg 0.704 ms, 1421.397 ops/sec
+KDF      128    SRTCP      2005 ops took 1.002 sec, avg 0.500 ms, 2000.489 ops/sec
+KDF      256    SRTCP      1420 ops took 1.002 sec, avg 0.705 ms, 1417.787 ops/sec
+scrypt    17                 40 ops took 1.168 sec, avg 29.200 ms, 34.247 ops/sec
+RSA     1024  key gen       103 ops took 1.016 sec, avg 9.863 ms, 101.394 ops/sec
+RSA     2048  key gen        13 ops took 1.012 sec, avg 77.882 ms, 12.840 ops/sec
+RSA     2048   public     37200 ops took 1.003 sec, avg 0.027 ms, 37098.663 ops/sec
+RSA     2048  private       800 ops took 1.103 sec, avg 1.379 ms, 725.077 ops/sec
+DH      2048  key gen      3245 ops took 1.000 sec, avg 0.308 ms, 3244.937 ops/sec
+DH      2048    agree      1600 ops took 1.034 sec, avg 0.646 ms, 1547.867 ops/sec
+ECC   [      SECP256R1]   256  key gen     22000 ops took 1.004 sec, avg 0.046 ms, 21905.059 ops/sec
+ECDHE [      SECP256R1]   256    agree     23300 ops took 1.001 sec, avg 0.043 ms, 23268.844 ops/sec
+ECDSA [      SECP256R1]   256     sign     17300 ops took 1.002 sec, avg 0.058 ms, 17270.580 ops/sec
+ECDSA [      SECP256R1]   256   verify     15400 ops took 1.002 sec, avg 0.065 ms, 15368.799 ops/sec
+ECC   [      SECP256R1]   256  encrypt      2500 ops took 1.007 sec, avg 0.403 ms, 2482.848 ops/sec
+ECC   [      SECP256R1]   256  decrypt     21200 ops took 1.002 sec, avg 0.047 ms, 21162.587 ops/sec
+ECC   [BRAINPOOLP256R1]   256  key gen     19800 ops took 1.002 sec, avg 0.051 ms, 19762.683 ops/sec
+ECDHE [BRAINPOOLP256R1]   256    agree     21500 ops took 1.004 sec, avg 0.047 ms, 21413.174 ops/sec
+ECDSA [BRAINPOOLP256R1]   256     sign     16000 ops took 1.007 sec, avg 0.063 ms, 15892.500 ops/sec
+ECDSA [BRAINPOOLP256R1]   256   verify     14900 ops took 1.006 sec, avg 0.068 ms, 14806.097 ops/sec
+ECC   [BRAINPOOLP256R1]   256  encrypt      2500 ops took 1.013 sec, avg 0.405 ms, 2468.972 ops/sec
+ECC   [BRAINPOOLP256R1]   256  decrypt     19500 ops took 1.002 sec, avg 0.051 ms, 19469.007 ops/sec
+CURVE  25519  key gen     28709 ops took 1.000 sec, avg 0.035 ms, 28708.582 ops/sec
+CURVE  25519    agree     29700 ops took 1.000 sec, avg 0.034 ms, 29688.484 ops/sec
+ED     25519  key gen     63261 ops took 1.000 sec, avg 0.016 ms, 63260.336 ops/sec
+ED     25519     sign     56300 ops took 1.001 sec, avg 0.018 ms, 56226.859 ops/sec
+ED     25519   verify     24200 ops took 1.002 sec, avg 0.041 ms, 24150.344 ops/sec
+CURVE    448  key gen      8941 ops took 1.000 sec, avg 0.112 ms, 8940.768 ops/sec
+CURVE    448    agree      9000 ops took 1.004 sec, avg 0.112 ms, 8963.020 ops/sec
+ED       448  key gen     20696 ops took 1.000 sec, avg 0.048 ms, 20695.275 ops/sec
+ED       448     sign     20000 ops took 1.003 sec, avg 0.050 ms, 19948.382 ops/sec
+ED       448   verify      7800 ops took 1.005 sec, avg 0.129 ms, 7761.110 ops/sec
+ECCSI    256  key gen     21810 ops took 1.000 sec, avg 0.046 ms, 21809.215 ops/sec
+ECCSI    256 pair gen     21270 ops took 1.000 sec, avg 0.047 ms, 21269.757 ops/sec
+ECCSI    256    valid     13313 ops took 1.000 sec, avg 0.075 ms, 13312.572 ops/sec
+ECCSI    256     sign     17769 ops took 1.000 sec, avg 0.056 ms, 17768.098 ops/sec
+ECCSI    256   verify      6376 ops took 1.000 sec, avg 0.157 ms, 6375.580 ops/sec
+SAKKE   1024  key gen      1132 ops took 1.000 sec, avg 0.884 ms, 1131.494 ops/sec
+SAKKE   1024  rsk gen      1068 ops took 1.000 sec, avg 0.936 ms, 1067.881 ops/sec
+SAKKE   1024    valid       111 ops took 1.007 sec, avg 9.075 ms, 110.199 ops/sec
+SAKKE   1024    encap-1     426 ops took 1.001 sec, avg 2.350 ms, 425.535 ops/sec
+SAKKE   1024   derive-1     104 ops took 1.008 sec, avg 9.689 ms, 103.205 ops/sec
+SAKKE   1024    encap-2     428 ops took 1.002 sec, avg 2.341 ms, 427.095 ops/sec
+SAKKE   1024   derive-2     104 ops took 1.007 sec, avg 9.687 ms, 103.226 ops/sec
+SAKKE   1024   derive-3     103 ops took 1.008 sec, avg 9.783 ms, 102.219 ops/sec
+SAKKE   1024   derive-4     104 ops took 1.009 sec, avg 9.703 ms, 103.061 ops/sec
+Benchmark complete
+
