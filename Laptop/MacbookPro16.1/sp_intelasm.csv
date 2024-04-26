@@ -1,0 +1,65 @@
+wolfSSL version: v5.7.0-stable-238-g12b936327 (Intel(R) Core(TM) i9-9980HK CPU @ 2.40GHz)
+./configure --enable-sp=yes,asm --enable-keygen --enable-intelasm
+Xeon(R) CPU E5-2697 v3 @ 2.60GHz
+------------------------------------------------------------------------------
+ wolfSSL version 5.7.0
+------------------------------------------------------------------------------
+Math: 	Multi-Precision: Wolf(SP) no-dyn-stack word-size=64 bits=4096 sp_int.c
+	Single Precision: ecc 256 384 521 rsa/dh 2048 3072 4096 asm sp_x86_64.c
+wolfCrypt Benchmark (block bytes 1048576, min 1.0 sec each)
+This format allows you to easily copy the output to a csv file.
+
+Symmetric Ciphers:
+
+Algorithm,MB/s,Cycles per byte,
+RNG,181.346229,12.621043,
+AES-128-CBC-enc,1356.279717,1.687555,
+AES-128-CBC-dec,5570.861339,0.410851,
+AES-192-CBC-enc,1104.570213,2.072115,
+AES-192-CBC-dec,5019.819280,0.455952,
+AES-256-CBC-enc,952.978759,2.401729,
+AES-256-CBC-dec,3984.789089,0.574383,
+AES-128-GCM-enc,5689.708168,0.402270,
+AES-128-GCM-dec,5770.919097,0.396609,
+AES-192-GCM-enc,4993.338056,0.458370,
+AES-192-GCM-dec,5104.597163,0.448379,
+AES-256-GCM-enc,4152.023312,0.551249,
+AES-256-GCM-dec,4162.365217,0.549879,
+GMAC Table 4-bit,1633.175295,1.401439,
+CHACHA,3041.399024,0.752547,
+CHA-POLY,2106.046804,1.086774,
+MD5,585.003976,3.912444,
+POLY1305,6447.800159,0.354973,
+SHA,558.491623,4.098171,
+SHA-224,459.399013,4.982156,
+SHA-256,456.652330,5.012119,
+SHA-384,741.188827,3.088007,
+SHA-512,664.019242,3.446883,
+SHA-512/224,670.479626,3.413668,
+SHA-512/256,715.602622,3.198418,
+SHA3-224,453.161985,5.050726,
+SHA3-256,448.827184,5.099502,
+SHA3-384,333.032440,6.872593,
+SHA3-512,222.065809,10.306824,
+HMAC-MD5,632.625789,3.617929,
+HMAC-SHA,540.387328,4.235470,
+HMAC-SHA224,313.258234,7.306417,
+HMAC-SHA256,360.365337,6.351320,
+HMAC-SHA384,423.574252,5.403531,
+HMAC-SHA512,483.441320,4.734380,
+PBKDF2,26.291257,89144.729068,
+
+Asymmetric Ciphers:
+
+Algorithm,key size,operation,avg ms,ops/sec,
+RSA,1024,key gen,21.621,46.252,
+RSA,2048,key gen,41.044,24.364,
+RSA,2048,public,0.020,51193.629,
+RSA,2048,private,0.849,1177.384,
+DH,2048,key gen,0.296,3383.590,
+DH,2048,agree,0.256,3903.082,
+ECC   [      SECP256R1],256,key gen,0.012,83827.331,
+ECDHE [      SECP256R1],256,agree,0.049,20483.303,
+ECDSA [      SECP256R1],256,sign,0.018,56189.671,
+ECDSA [      SECP256R1],256,verify,0.048,20891.059,
+Benchmark complete
