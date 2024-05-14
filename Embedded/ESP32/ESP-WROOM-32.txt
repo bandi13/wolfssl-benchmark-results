@@ -1,0 +1,24 @@
+# Using IDE/PlatformIO version from PR#7528
+
+RNG                       1575 KiB took 1.001 seconds, 1573.427 KiB/s Cycles per byte = 244.46
+AES-128-CBC-enc           6400 KiB took 1.000 seconds, 6400.000 KiB/s Cycles per byte =  36.61
+AES-128-CBC-dec           7325 KiB took 1.000 seconds, 7325.000 KiB/s Cycles per byte =  32.01
+AES-192-CBC-enc           6400 KiB took 1.001 seconds, 6393.606 KiB/s Cycles per byte =  36.65
+AES-192-CBC-dec           7325 KiB took 1.002 seconds, 7310.379 KiB/s Cycles per byte =  32.05
+AES-256-CBC-enc           6275 KiB took 1.002 seconds, 6262.475 KiB/s Cycles per byte =  37.45
+AES-256-CBC-dec           7300 KiB took 1.000 seconds, 7300.000 KiB/s Cycles per byte =  32.10
+AES-128-GCM-enc            375 KiB took 1.043 seconds,  359.540 KiB/s Cycles per byte = 651.85
+AES-128-GCM-dec            375 KiB took 1.043 seconds,  359.540 KiB/s Cycles per byte = 652.04
+AES-192-GCM-enc            375 KiB took 1.048 seconds,  357.824 KiB/s Cycles per byte = 654.98
+AES-192-GCM-dec            375 KiB took 1.048 seconds,  357.824 KiB/s Cycles per byte = 655.31
+AES-256-GCM-enc            375 KiB took 1.053 seconds,  356.125 KiB/s Cycles per byte = 658.48
+AES-256-GCM-dec            375 KiB took 1.054 seconds,  355.787 KiB/s Cycles per byte = 658.80
+GMAC Default               430 KiB took 1.002 seconds,  429.142 KiB/s Cycles per byte = 545.92
+3DES                       100 KiB took 1.062 seconds,   94.162 KiB/s Cycles per byte = 2488.83
+MD5                      13950 KiB took 1.001 seconds, 13936.064 KiB/s Cycles per byte =  16.82
+SHA                      16225 KiB took 1.000 seconds, 16225.000 KiB/s Cycles per byte =  14.44
+SHA-256                  15650 KiB took 1.000 seconds, 15650.000 KiB/s Cycles per byte =  14.98
+HMAC-MD5                 13800 KiB took 1.001 seconds, 13786.214 KiB/s Cycles per byte =  17.00
+HMAC-SHA                 16000 KiB took 1.001 seconds, 15984.016 KiB/s Cycles per byte =  14.66
+HMAC-SHA256              15200 KiB took 1.001 seconds, 15184.815 KiB/s Cycles per byte =  15.44
+PBKDF2                       1 KiB took 1.026 seconds,    0.548 KiB/s Cycles per byte = 427603.72
