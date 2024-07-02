@@ -1,0 +1,48 @@
+Benchmark Test
+Math:    Multi-Precision: Wolf(SP) word-size=32 bits=3072 sp_int.c
+         Single Precision: ecc 256 rsa/dh 2048 3072 asm sp_arm32.c small
+wolfCrypt Benchmark (block bytes 1024, min 1.0 sec each)
+RNG                          6 MiB took 1.000 seconds,    5.786 MiB/s
+AES-128-CBC-enc             24 MiB took 1.000 seconds,   23.584 MiB/s
+AES-128-CBC-dec             22 MiB took 1.000 seconds,   22.485 MiB/s
+AES-192-CBC-enc             20 MiB took 1.000 seconds,   19.849 MiB/s
+AES-192-CBC-dec             19 MiB took 1.000 seconds,   19.067 MiB/s
+AES-256-CBC-enc             17 MiB took 1.000 seconds,   16.943 MiB/s
+AES-256-CBC-dec             16 MiB took 1.000 seconds,   16.431 MiB/s
+AES-128-GCM-enc             12 MiB took 1.000 seconds,   11.768 MiB/s
+AES-128-GCM-dec             12 MiB took 1.000 seconds,   11.670 MiB/s
+AES-192-GCM-enc             11 MiB took 1.000 seconds,   10.742 MiB/s
+AES-192-GCM-dec             11 MiB took 1.000 seconds,   10.669 MiB/s
+AES-256-GCM-enc             10 MiB took 1.000 seconds,    9.790 MiB/s
+AES-256-GCM-dec             10 MiB took 1.000 seconds,    9.741 MiB/s
+AES-128-GCM-enc-no_AAD      12 MiB took 1.000 seconds,   11.841 MiB/s
+AES-128-GCM-dec-no_AAD      12 MiB took 1.000 seconds,   11.792 MiB/s
+AES-192-GCM-enc-no_AAD      11 MiB took 1.000 seconds,   10.840 MiB/s
+AES-192-GCM-dec-no_AAD      11 MiB took 1.000 seconds,   10.791 MiB/s
+AES-256-GCM-enc-no_AAD      10 MiB took 1.000 seconds,    9.839 MiB/s
+AES-256-GCM-dec-no_AAD      10 MiB took 1.000 seconds,    9.839 MiB/s
+GMAC Table 4-bit            24 MiB took 1.000 seconds,   23.695 MiB/s
+CHACHA                       3 MiB took 1.000 seconds,    2.905 MiB/s
+CHA-POLY                     2 MiB took 1.000 seconds,    2.002 MiB/s
+MD5                         20 MiB took 1.000 seconds,   19.824 MiB/s
+POLY1305                     8 MiB took 1.000 seconds,    8.301 MiB/s
+SHA                          7 MiB took 1.000 seconds,    7.153 MiB/s
+SHA-256                     19 MiB took 1.000 seconds,   19.458 MiB/s
+SHA-384                     10 MiB took 1.000 seconds,    9.741 MiB/s
+SHA-512                     10 MiB took 1.000 seconds,    9.766 MiB/s
+SHA-512/224                 10 MiB took 1.000 seconds,    9.741 MiB/s
+SHA-512/256                 10 MiB took 1.000 seconds,    9.741 MiB/s
+HMAC-MD5                    19 MiB took 1.000 seconds,   19.263 MiB/s
+HMAC-SHA                     7 MiB took 1.000 seconds,    7.080 MiB/s
+HMAC-SHA256                 19 MiB took 1.000 seconds,   19.287 MiB/s
+HMAC-SHA384                 10 MiB took 1.000 seconds,    9.595 MiB/s
+HMAC-SHA512                 10 MiB took 1.000 seconds,    9.570 MiB/s
+PBKDF2                       2 KiB took 1.000 seconds,    1.938 KiB/s
+RSA     2048   public       658 ops took 1.000 sec, avg 1.520 ms, 658.000 ops/sec
+RSA     2048  private        18 ops took 1.000 sec, avg 55.556 ms, 18.000 ops/sec
+ECC   [      SECP256R1]   256  key gen       742 ops took 1.000 sec, avg 1.348 ms, 742.000 ops/sec
+ECDHE [      SECP256R1]   256    agree       366 ops took 1.000 sec, avg 2.732 ms, 366.000 ops/sec
+ECDSA [      SECP256R1]   256     sign       470 ops took 1.000 sec, avg 2.128 ms, 470.000 ops/sec
+ECDSA [      SECP256R1]   256   verify       304 ops took 1.000 sec, avg 3.289 ms, 304.000 ops/sec
+Benchmark complete
+Benchmark Test: Return code 0
