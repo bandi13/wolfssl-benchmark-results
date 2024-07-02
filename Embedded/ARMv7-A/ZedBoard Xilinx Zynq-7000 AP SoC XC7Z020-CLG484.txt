@@ -1,3 +1,17 @@
+/* Symmetric ARM ASM 32-bit speedups */
+#define WOLFSSL_ARMASM
+#define WOLFSSL_ARMASM_INLINE
+#define WOLFSSL_ARM_ARCH 7
+#define WOLFSSL_ARMASM_NO_HW_CRYPTO
+#define WOLFSSL_ARMASM_NO_NEON
+ 
+/* Single Precision ARM 32 ASM Small */
+#define WOLFSSL_SP_ARM32_ASM
+#define WOLFSSL_HAVE_SP_RSA
+#define WOLFSSL_HAVE_SP_DH
+#define WOLFSSL_HAVE_SP_ECC
+#define WOLFSSL_SP_SMALL
+
 Benchmark Test
 Math:    Multi-Precision: Wolf(SP) word-size=32 bits=3072 sp_int.c
          Single Precision: ecc 256 rsa/dh 2048 3072 asm sp_arm32.c small
